@@ -1,0 +1,16 @@
+{
+    "name": "ramoose/hold-my-place",
+    "description": "Generate base64 placeholder images.",
+    "type": "library",
+    "require-dev": {
+        "kint-php/kint": "^3.0"
+    },
+    "license": "GPLv3",
+    "authors": [
+        {
+            "name": "Chris",
+            "email": "chrisdavidramos@gmail.com"
+        }
+    ],
+    "require": {}
+}
