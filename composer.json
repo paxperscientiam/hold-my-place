@@ -2,6 +2,11 @@
     "name": "ramoose/hold-my-place",
     "description": "Generate base64 placeholder images.",
     "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Ramoose\\HoldMyPlace\\": "src/"
+        }
+    },
     "require-dev": {
         "kint-php/kint": "^3.0"
     },
@@ -12,5 +17,8 @@
             "email": "chrisdavidramos@gmail.com"
         }
     ],
-    "require": {}
+    "require": {},
+    "config": {
+        "vendor-dir": "app/vendor"
+    }
 }
