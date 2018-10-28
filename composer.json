@@ -1,6 +1,7 @@
 {
     "name": "ramoose/hold-my-place",
     "description": "Generate base64 placeholder images.",
+    "homepage": "https://github.com/paxperscientiam/hold-my-place",
     "type": "library",
     "autoload": {
         "psr-4": {
@@ -10,7 +11,7 @@
     "require-dev": {
         "kint-php/kint": "^3.0"
     },
-    "license": "GPLv3",
+    "license": "GPL-3.0-or-later",
     "authors": [
         {
             "name": "Chris",
@@ -20,5 +21,6 @@
     "require": {},
     "config": {
         "vendor-dir": "app/vendor"
-    }
+    },
+    "stability": "RC"
 }
