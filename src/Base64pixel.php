@@ -2,7 +2,7 @@
 
 namespace Ramoose\HoldMyPlace;
 
-class Image
+class Base64pixel
 {
     public static $image;
 

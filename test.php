@@ -1,7 +1,7 @@
 <?PHP
   require __DIR__."/app/vendor/autoload.php";
 
-  use Ramoose\HoldMyPlace\Image;
+  use Ramoose\HoldMyPlace\Base64pixel as Image;
 
   Image::init();
 
