@@ -4,13 +4,17 @@ namespace Ramoose\HoldMyPlace;
 
 class Image
 {
-    public function __construct()
+    public static $image;
+
+    public static function init()
     {
+        self::$image = new \Imagick();
     }
 
     public static function create(string $color = 'red')
     {
-        $image = new \Imagick();
+        $image = self::$image;
+
         $image->newImage(1, 1, new \ImagickPixel($color));
         $image->setImageFormat('png');
         $blob = $image->getImageBlob();
