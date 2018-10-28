@@ -4,7 +4,7 @@ namespace Ramoose\HoldMyPlace;
 
 class Base64pixel
 {
-    public static $image;
+    private static $image;
 
     public static function init()
     {
