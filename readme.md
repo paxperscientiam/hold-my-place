@@ -1,8 +1,12 @@
 # ramoose/hold-my-place
+## Motivation
+Makes prototyping easier: no external placeholder image service needed, no local image library needed.
+
+Just make your pixel image and scale with CSS. That's it.
 
 ## usage (with composer)
 
-### initalize
+### Initalize
 ```PHP
 require __DIR__."/app/vendor/autoload.php";
 
