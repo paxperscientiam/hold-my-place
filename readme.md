@@ -20,3 +20,7 @@ Create your pixel. See `php` documentation on `ImagickPixel::__construct` for co
 <img class="placeholder" src="<?=B64::create("green")?>"/>
 <img class="placeholder" src="<?=B64::create('rgb(0, 0, 0)')?>"/>
 ```
+
+## Demo
+
+`composer test` will execute the following: `php -S localhost:8000 ./test.php`
