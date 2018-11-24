@@ -22,5 +22,8 @@
     "config": {
         "vendor-dir": "app/vendor"
     },
-    "stability": "RC"
+    "stability": "RC",
+    "scripts": {
+        "test": "@php -S localhost:8000 ./test.php"
+    }
 }

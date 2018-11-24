@@ -1,4 +1,4 @@
-<?PHP
+<?PHP // -*- mode:web -*-
 require __DIR__."/app/vendor/autoload.php";
 
 use Ramoose\HoldMyPlace\Base64pixel as B64;
@@ -21,6 +21,6 @@ B64::init();
     <body>
         <div><img class="placeholder" src="<?=B64::create("red")?>"/></div>
         <div><img class="placeholder" src="<?=B64::create("green")?>"/></div>
-        <div><img class="placeholder" src="<?=B64::create("blue")?>"/></div>
+        <div><img class="placeholder" src="<?=B64::create('rgb(0, 0, 0)')?>"/></div>
     </body>
 </html>
