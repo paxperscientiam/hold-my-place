@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>readme.html</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+
+</head>
+
+<body>
+
+<h1>ramoose/hold-my-place</h1>
+
+<h2>usage (with composer)</h2>
+
+<h3>initalize</h3>
+
+<p>```PHP
+require <strong>DIR</strong>.&quot;/app/vendor/autoload.php&quot;;</p>
+
+<p>use Ramoose\HoldMyPlace\Base64pixel as B64;</p>
+
+<p>B64::init();</p>
+
+<p>// B64::create(string $color, string $format);
+```</p>
+
+<h3>HTML examples</h3>
+
+<p>Create your pixel. See <code>php</code> documentation on <code>ImagickPixel::__construct</code> for color code options. <a href="http://php.net/manual/en/imagickpixel.construct.php">link</a></p>
+
+<p><code>html
+&lt;img class=&quot;placeholder&quot; src=&quot;&lt;?=B64::create(&quot;red&quot;)?&gt;&quot;/&gt;
+&lt;img class=&quot;placeholder&quot; src=&quot;&lt;?=B64::create(&quot;green&quot;)?&gt;&quot;/&gt;
+&lt;img class=&quot;placeholder&quot; src=&quot;&lt;?=B64::create('rgb(0, 0, 0)')?&gt;&quot;/&gt;</code></p>
+
+<h2>Demo</h2>
+
+<p><code>composer test</code> will execute the following: <code>php -S localhost:8000 ./test.php</code></p>
+
+<p>You can then see the demo in your browser by navigating to <code>http://localhost:8000</code>.</p>
+
+<p>The demo page will also give you a list of image formats you build of <code>Imagick</code> supports.</p>
+
+</body>
+</html>

@@ -11,15 +11,15 @@ class Base64pixel
         self::$image = new \Imagick();
     }
 
-    public static function create(string $color = 'red')
+    public static function create(string $color = 'red', string $format = 'png')
     {
         $image = self::$image;
 
         $image->newImage(1, 1, new \ImagickPixel($color));
-        $image->setImageFormat('png');
+        $image->setImageFormat($format);
         $blob = $image->getImageBlob();
         $image->clear();
         $img = base64_encode($blob);
-        return "data:image/png;base64,$img";
+        return "data:image/{$format};base64,$img";
     }
 }

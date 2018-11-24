@@ -19,8 +19,9 @@ B64::init();
         </style>
     </head>
     <body>
-        <div><img class="placeholder" src="<?=B64::create("red")?>"/></div>
+        <div><img class="placeholder" src="<?=B64::create("red",'gif')?>"/></div>
         <div><img class="placeholder" src="<?=B64::create("green")?>"/></div>
         <div><img class="placeholder" src="<?=B64::create('rgb(0, 0, 0)')?>"/></div>
     </body>
+    <?PHP d(\Imagick::queryFormats())?>
 </html>
