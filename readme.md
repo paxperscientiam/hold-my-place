@@ -6,13 +6,11 @@ Just make your pixel image and scale with CSS. That's it.
 
 ## usage (with composer)
 
-### Initalize
+### Require
 ```PHP
 require __DIR__."/app/vendor/autoload.php";
 
 use Ramoose\HoldMyPlace\Base64pixel as B64;
-
-B64::init();
 
 // B64::create(string $color, string $format);
 ```

@@ -4,11 +4,15 @@ namespace Ramoose\HoldMyPlace;
 
 class Base64pixel
 {
+    private static $init = false;
     private static $image;
 
     public static function init()
     {
-        self::$image = new \Imagick();
+        if (!self::$init) {
+            self::$image = new \Imagick();
+            self::$init = true;
+        }
     }
 
     public static function create(string $color = 'red', string $format = 'png')
@@ -23,3 +27,4 @@ class Base64pixel
         return "data:image/{$format};base64,$img";
     }
 }
+Base64pixel::init();

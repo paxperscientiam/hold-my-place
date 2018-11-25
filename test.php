@@ -2,9 +2,7 @@
 require __DIR__."/app/vendor/autoload.php";
 
 use Ramoose\HoldMyPlace\Base64pixel as B64;
-
-B64::init();
-
+Kint\Renderer\RichRenderer::$folder = false;
 ?>
 <!doctype html>
 <html lang="en">
@@ -23,5 +21,5 @@ B64::init();
         <div><img class="placeholder" src="<?=B64::create("green")?>"/></div>
         <div><img class="placeholder" src="<?=B64::create('rgb(0, 0, 0)')?>"/></div>
     </body>
-    <?PHP d(\Imagick::queryFormats())?>
+    <?PHP !d(\Imagick::queryFormats())?>
 </html>
