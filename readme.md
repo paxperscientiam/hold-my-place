@@ -25,6 +25,11 @@ Create your pixel. See `php` documentation on `ImagickPixel::__construct` for co
 <img class="placeholder" src="<?=B64::create('rgb(0, 0, 0)')?>"/>
 ```
 
+## Methods
+`Base64pixel::create(string $color = 'red', string $format = 'png');`
+`Base64pixel::random(string $format = 'png');`
+
+
 ## Demo
 
 `composer test` will execute the following: `php -S localhost:8000 ./test.php`
